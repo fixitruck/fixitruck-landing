@@ -44,22 +44,4 @@ export default function Home() {
       </div>
     </main>
   );
-}>
-            <Highlighter 
-              action="underline" 
-              color="#ff6b6b" 
-              isView={true}
-              animationDuration={600}
-            >
-              30-second analysis
-            </Highlighter>
-          </span>
-          . Instant repair connections.
-        </p>
-        <p className="mt-4 text-base text-gray-500">
-          Platform launching soon.
-        </p>
-      </div>
-    </main>
-  );
 }
