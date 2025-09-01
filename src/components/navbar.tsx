@@ -10,14 +10,14 @@ export default function Navbar() {
         <div className="flex justify-center items-center h-16">
           <div className="flex space-x-8">
             <Link
-              href="https://fleet.fixitruck.com"
+              href="https://app.fixitruck.com/fleet/"
               className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
             >
               <FleetIcon width={20} height={20} className="inline-block" />
               Fleet Customers
             </Link>
             <Link
-              href="https://repair.fixitruck.com"
+              href="https://app.fixitruck.com/repair/"
               className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
             >
               <RepairServiceIcon width={20} height={20} className="inline-block" />
