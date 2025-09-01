@@ -125,3 +125,8 @@ npm run build      # Ensure production build works
 - Proper ARIA labels where needed
 - Keyboard navigation support
 - Screen reader compatibility
+
+### Documentation Standards
+- No emojis in any documentation, code, or comments
+- Professional and clear language
+- Technical accuracy and completeness
