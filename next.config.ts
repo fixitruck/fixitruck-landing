@@ -5,8 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/fixitruck-landing' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/fixitruck-landing' : '',
+  // No basePath or assetPrefix needed for custom domain
 };
 
 export default nextConfig;
