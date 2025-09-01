@@ -1,6 +1,8 @@
 import DotPattern from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 
+import { Highlighter } from "@/components/magicui/highlighter";
+
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-white px-8 py-24">
@@ -14,9 +16,19 @@ export default function Home() {
           FixiTruck
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl mx-auto">
-          AI-powered diagnostics for commercial trucks.
+          <Highlighter action="highlight" color="#ffd700" isView={true}>
+            AI-powered diagnostics
+          </Highlighter>{" "}
+          for commercial trucks.
           <br />
-          30-second analysis. Instant repair connections.
+          <Highlighter action="underline" color="#ff6b6b" isView={true}>
+            30-second analysis
+          </Highlighter>
+          .{" "}
+          <Highlighter action="circle" color="#4ecdc4" isView={true}>
+            Instant repair connections
+          </Highlighter>
+          .
         </p>
         <p className="mt-4 text-base text-gray-500">
           Platform launching soon.
