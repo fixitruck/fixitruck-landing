@@ -19,10 +19,10 @@ npm install
 # Run development server
 npm run dev
 
-# Build for production
+# Build for production (with static export)
 npm run build
 
-# Start production server
+# Start production server (for testing)
 npm run start
 
 # Run linter
@@ -31,6 +31,24 @@ npm run lint
 # Add ShadCN/UI components
 npx shadcn@latest add [component-name]
 ```
+
+## Deployment & CI/CD
+
+### Production URL
+Live at: **https://fixitruck.com**
+
+### Automated Deployment
+- **Platform**: GitHub Pages with custom domain
+- **Trigger**: Automatic deployment on push to main branch
+- **Build Process**: Next.js static export to `out/` directory
+- **Workflows**: 
+  - `.github/workflows/deploy.yml` - Production deployment
+  - `.github/workflows/ci.yml` - Continuous integration checks
+
+### Configuration Files
+- `next.config.js` - Next.js configuration with static export
+- `public/CNAME` - Custom domain configuration for GitHub Pages
+- `.nojekyll` - Preserves _next directory structure
 
 ## Design Requirements
 - **Mobile-first**: Primary usage on phones during roadside emergencies

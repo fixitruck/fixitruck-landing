@@ -48,7 +48,7 @@ FixiTruck revolutionizes roadside assistance for the 3.5 million truck drivers i
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fixitruck-landing.git
+git clone https://github.com/fixitruck/fixitruck-landing.git
 cd fixitruck-landing
 ```
 
@@ -63,6 +63,19 @@ npm run dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🌐 Deployment
+
+### Live Site
+The landing page is live at: **[https://fixitruck.com](https://fixitruck.com)**
+
+### Deployment Pipeline
+- **Hosting**: GitHub Pages with custom domain
+- **CI/CD**: GitHub Actions automatically deploys on push to main branch
+- **Build**: Next.js static export optimized for performance
+
+### Deployment Status
+[![Deploy to GitHub Pages](https://github.com/fixitruck/fixitruck-landing/actions/workflows/deploy.yml/badge.svg)](https://github.com/fixitruck/fixitruck-landing/actions/workflows/deploy.yml)
 
 ## 📝 Available Scripts
 
