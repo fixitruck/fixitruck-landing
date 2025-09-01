@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run ESLint
+        run: npm run lint
+        
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build application
+        run: npm run build
+        
+      - name: Check TypeScript
+        run: npx tsc --noEmit
+        
+  lighthouse:
+    name: Lighthouse CI
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build application
+        run: npm run build
+        
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v11
+        with:
+          urls: |
+            http://localhost:3000
+          uploadArtifacts: true
+          temporaryPublicStorage: true
