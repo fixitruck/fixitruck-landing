@@ -24,11 +24,7 @@ export default function Home() {
           <Highlighter action="underline" color="#ff6b6b" isView={true}>
             30-second analysis
           </Highlighter>
-          .{" "}
-          <Highlighter action="circle" color="#4ecdc4" isView={true}>
-            Instant repair connections
-          </Highlighter>
-          .
+          . Instant repair connections.
         </p>
         <p className="mt-4 text-base text-gray-500">
           Platform launching soon.
