@@ -24,6 +24,7 @@ interface HighlighterProps {
   padding?: number;
   multiline?: boolean;
   isView?: boolean;
+  animationDelay?: number;
 }
 
 export function Highlighter({
@@ -36,6 +37,7 @@ export function Highlighter({
   padding = 2,
   multiline = true,
   isView = false,
+  animationDelay = 0,
 }: HighlighterProps) {
   const elementRef = useRef<HTMLSpanElement>(null);
   const isInView = useInView(elementRef, {
@@ -52,19 +54,22 @@ export function Highlighter({
     const element = elementRef.current;
     if (!element) return;
 
-    const annotation = annotate(element, {
-      type: action,
-      color,
-      strokeWidth,
-      animationDuration,
-      iterations,
-      padding,
-      multiline,
-    });
+    const timeoutId = setTimeout(() => {
+      const annotation = annotate(element, {
+        type: action,
+        color,
+        strokeWidth,
+        animationDuration,
+        iterations,
+        padding,
+        multiline,
+      });
 
-    annotation.show();
+      annotation.show();
+    }, animationDelay);
 
     return () => {
+      clearTimeout(timeoutId);
       if (element) {
         annotate(element, { type: action }).remove();
       }
@@ -78,6 +83,7 @@ export function Highlighter({
     iterations,
     padding,
     multiline,
+    animationDelay,
   ]);
 
   return (

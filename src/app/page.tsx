@@ -16,14 +16,44 @@ export default function Home() {
           FixiTruck
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600 max-w-xl mx-auto">
-          <Highlighter action="highlight" color="#ffd700" isView={true}>
+          <Highlighter 
+            action="highlight" 
+            color="#ffd700" 
+            isView={true}
+            animationDuration={600}
+            animationDelay={0}
+          >
             AI-powered diagnostics
           </Highlighter>{" "}
           for commercial trucks.
           <br />
-          <Highlighter action="underline" color="#ff6b6b" isView={true}>
+          <Highlighter 
+            action="underline" 
+            color="#ff6b6b" 
+            isView={true}
+            animationDuration={600}
+            animationDelay={800}
+          >
             30-second analysis
           </Highlighter>
+          . Instant repair connections.
+        </p>
+        <p className="mt-4 text-base text-gray-500">
+          Platform launching soon.
+        </p>
+      </div>
+    </main>
+  );
+}>
+            <Highlighter 
+              action="underline" 
+              color="#ff6b6b" 
+              isView={true}
+              animationDuration={600}
+            >
+              30-second analysis
+            </Highlighter>
+          </span>
           . Instant repair connections.
         </p>
         <p className="mt-4 text-base text-gray-500">
