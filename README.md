@@ -2,7 +2,7 @@
 
 AI-powered truck repair assistance platform that connects broken-down truck drivers with nearby repair shops in 30 seconds.
 
-## 🚛 Problem We Solve
+## Problem We Solve
 
 Truck drivers face critical challenges when their vehicles break down:
 - **4-6 hours wasted** calling repair shops one by one
@@ -10,7 +10,7 @@ Truck drivers face critical challenges when their vehicles break down:
 - **Language barriers** for non-native English speakers
 - **Uncertainty** about repair costs and availability
 
-## 💡 Our Solution
+## Our Solution
 
 FixiTruck revolutionizes roadside assistance for the 3.5 million truck drivers in the US:
 - **30-second AI diagnosis** of truck problems
@@ -18,7 +18,7 @@ FixiTruck revolutionizes roadside assistance for the 3.5 million truck drivers i
 - **Automatic translation** - describe once, AI handles all communication
 - **Real-time availability** and pricing from multiple shops
 
-## 🎯 Key Features
+## Key Features
 
 - **AI-Powered Diagnosis**: Advanced AI analyzes truck issues instantly
 - **One-Time Description**: Explain your problem once, AI translates and communicates with all shops
@@ -27,7 +27,7 @@ FixiTruck revolutionizes roadside assistance for the 3.5 million truck drivers i
 - **Mobile-First Design**: Optimized for emergency roadside use
 - **Fast Performance**: < 3 second load time on 3G networks
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 15](https://nextjs.org/) - React framework with App Router
 - **Language**: [TypeScript](https://www.typescriptlang.org/) - Type-safe development
@@ -37,7 +37,7 @@ FixiTruck revolutionizes roadside assistance for the 3.5 million truck drivers i
 - **Icons**: [Lucide React](https://lucide.dev/) - Beautiful icon library
 - **Magic UI**: Custom decorative components
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🌐 Deployment
+## Deployment
 
 ### Live Site
 The landing page is live at: **[https://fixitruck.com](https://fixitruck.com)**
@@ -77,7 +77,7 @@ The landing page is live at: **[https://fixitruck.com](https://fixitruck.com)**
 ### Deployment Status
 [![Deploy to GitHub Pages](https://github.com/fixitruck/fixitruck-landing/actions/workflows/deploy.yml/badge.svg)](https://github.com/fixitruck/fixitruck-landing/actions/workflows/deploy.yml)
 
-## 📝 Available Scripts
+## Available Scripts
 
 ```bash
 # Development
@@ -94,7 +94,7 @@ npm run lint       # Run ESLint
 npx shadcn@latest add [component-name]  # Add new UI components
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fixitruck-landing/
@@ -117,7 +117,7 @@ fixitruck-landing/
 └── package.json         # Dependencies
 ```
 
-## 🎨 Design Principles
+## Design Principles
 
 - **Mobile-First**: Primary usage during roadside emergencies
 - **Accessibility**: WCAG 2.1 AA compliance for all users
@@ -125,7 +125,7 @@ fixitruck-landing/
 - **Clarity**: Emergency-focused with prominent CTAs
 - **Trust**: Professional design that instills confidence
 
-## 📋 Landing Page Sections
+## Landing Page Sections
 
 1. **Hero Section**: Clear value proposition with emergency CTA
 2. **Problem Section**: Current pain points drivers face
@@ -135,7 +135,7 @@ fixitruck-landing/
 6. **Trust Section**: Statistics and testimonials
 7. **Final CTA**: Prominent call-to-action
 
-## 🔧 Development Guidelines
+## Development Guidelines
 
 ### Code Style
 - Use TypeScript strict mode
@@ -154,18 +154,18 @@ fixitruck-landing/
 - < 1 second interaction response
 - 90+ Lighthouse performance score
 
-## 📄 License
+## License
 
 [Add your license information here]
 
-## 🤝 Contributing
+## Contributing
 
 [Add contribution guidelines if applicable]
 
-## 📞 Contact
+## Contact
 
 [Add contact information]
 
 ---
 
-Built with ❤️ for the 3.5 million truck drivers keeping America moving
+Built for the 3.5 million truck drivers keeping America moving
