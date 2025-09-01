@@ -9,7 +9,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "FixiTruck - AI-Powered Truck Repair Assistance",
   description: "Get your truck fixed in 30 seconds. AI diagnosis, instant connection to nearby repair shops, automatic translation.",
-};
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" }
+    ],
+  },
+  manifest: "/manifest.json",
+};;
 
 export default function RootLayout({
   children,
