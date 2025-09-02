@@ -36,7 +36,7 @@ export default function Navbar() {
                 Repair Service Providers
               </Link>
               <Link
-                href="https://admin.fixitruck.com"
+                href="https://app.fixitruck.com/admin"
                 className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
               >
                 <InternalIcon width={20} height={20} className="inline-block" />
@@ -87,7 +87,7 @@ export default function Navbar() {
                 Repair Service Providers
               </Link>
               <Link
-                href="https://admin.fixitruck.com"
+                href="https://app.fixitruck.com/admin"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
