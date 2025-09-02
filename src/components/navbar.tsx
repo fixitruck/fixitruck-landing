@@ -23,24 +23,27 @@ export default function Navbar() {
             <div className="flex space-x-8">
               <Link
                 href="https://app.fixitruck.com/fleet/"
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
+                className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-sm group"
               >
-                <FleetIcon width={20} height={20} className="inline-block" />
+                <FleetIcon width={20} height={20} className="inline-block group-hover:scale-110 transition-transform duration-200" />
                 Fleet Customers
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
               </Link>
               <Link
                 href="https://app.fixitruck.com/repair/"
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
+                className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-sm group"
               >
-                <RepairServiceIcon width={20} height={20} className="inline-block" />
+                <RepairServiceIcon width={20} height={20} className="inline-block group-hover:scale-110 transition-transform duration-200" />
                 Repair Service Providers
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
               </Link>
               <Link
                 href="https://app.fixitruck.com/admin"
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors flex items-center gap-1"
+                className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-sm group"
               >
-                <InternalIcon width={20} height={20} className="inline-block" />
+                <InternalIcon width={20} height={20} className="inline-block group-hover:scale-110 transition-transform duration-200" />
                 Internal
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
               </Link>
             </div>
           </div>
