@@ -24,7 +24,7 @@ export default function Home() {
             action="highlight" 
             color="#ffd700" 
             isView={true}
-            animationDuration={600}
+            animationDuration={300}
             animationDelay={0}
           >
             AI-powered diagnostics
@@ -36,7 +36,7 @@ export default function Home() {
               action="underline" 
               color="#ff6b6b" 
               isView={true}
-              animationDuration={600}
+              animationDuration={300}
               animationDelay={800}
             >
               30-second analysis
