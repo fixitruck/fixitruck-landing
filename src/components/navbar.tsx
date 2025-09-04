@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-center">
             <div className="flex space-x-8">
               <Link
-                href="https://app.fixitruck.com/fleet/"
+                href="https://app.fixitruck.com/"
                 className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-sm group"
               >
                 <FleetIcon width={20} height={20} className="inline-block group-hover:scale-110 transition-transform duration-200" />
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 rounded-full"></span>
               </Link>
               <Link
-                href="https://app.fixitruck.com/repair/"
+                href="https://app.fixitruck.com/"
                 className="relative text-sm font-medium text-gray-700 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:shadow-sm group"
               >
                 <RepairServiceIcon width={20} height={20} className="inline-block group-hover:scale-110 transition-transform duration-200" />
@@ -74,7 +74,7 @@ export default function Navbar() {
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
-                href="https://app.fixitruck.com/fleet/"
+                href="https://app.fixitruck.com/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -82,7 +82,7 @@ export default function Navbar() {
                 Fleet Customers
               </Link>
               <Link
-                href="https://app.fixitruck.com/repair/"
+                href="https://app.fixitruck.com/"
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 flex items-center gap-2"
                 onClick={() => setIsMenuOpen(false)}
               >
