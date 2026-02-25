@@ -20,7 +20,7 @@ Pushes to `main` auto-deploy via GitHub Actions (rsync to `/var/www/fixitruck.co
 
 - `index.html` — the entire landing page (sections: hero, how-it-works, features, footer)
 - `assets/js/main.js` — all interactivity (sticky header, mobile menu, theme toggle, smooth scroll, back-to-top)
-- `src/css/tailwind.css` — pre-compiled Tailwind CSS v4.0.9 stylesheet (not built from source)
+- `assets/css/tailwind.css` — pre-compiled Tailwind CSS v4.0.9 stylesheet (not built from source)
 - `assets/css/` — vendor CSS (animate.css, swiper)
 - `assets/js/` — vendor JS (WOW.js for scroll animations, Swiper bundled but unused)
 - `assets/images/` — organized by section (hero/, about/, team/, logo/, footer/)
