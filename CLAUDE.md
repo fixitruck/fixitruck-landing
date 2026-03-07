@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static marketing landing page for [fixitruck.com](https://fixitruck.com) — a platform connecting drivers/fleets with truck repair shops. Built on the [Play Tailwind](https://github.com/TailGrids/play-tailwind) template.
+Static marketing landing page for [fixitruck.com](https://fixitruck.com) — a fleet management and maintenance platform for commercial trucking. Built on the [Play Tailwind](https://github.com/TailGrids/play-tailwind) template.
 
 ## Development
 
