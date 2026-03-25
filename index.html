@@ -901,5 +901,35 @@
 
       window.document.addEventListener("scroll", onScroll);
     </script>
+  <script>
+  (function () {
+    function updateAuthLinks() {
+      fetch("/api/v1/me/", { credentials: "same-origin" })
+        .then(function (r) {
+          if (!r.ok) throw new Error("Status " + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          if (!data.authenticated || !data.dashboard_url) return;
+
+          var links = document.querySelectorAll('a[href="/accounts/login/"]');
+          links.forEach(function (link) {
+            link.href = data.dashboard_url;
+            link.textContent = "Dashboard";
+          });
+        })
+        .catch(function () {
+          // Silently keep Sign In links on error
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", updateAuthLinks);
+
+    // Re-check auth when page is restored from back/forward cache
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted) updateAuthLinks();
+    });
+  })();
+</script>
   </body>
 </html>
